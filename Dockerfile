@@ -25,7 +25,10 @@ RUN rm -rf /var/cache/yum/* && yum clean all
 ADD httpd.conf /etc/httpd/conf/httpd.conf
 ADD php.ini /etc/php.ini
 
-CMD [ "apachectl start" ]
+RUN groupadd vagrant
+RUN useradd --shell /sbin/nologin -g vagrant vagrant
+
+CMD ["apachectl", "start"]
 CMD [ "redis-server" ]
 
 EXPOSE 80

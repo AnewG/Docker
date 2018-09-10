@@ -2,7 +2,8 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: anewg/lamp:v1
+    # image: anewg/lamp:v1
+    image: lamp:latest
     deploy:
       replicas: 3
       resources:
@@ -13,9 +14,14 @@ services:
         condition: on-failure
     ports:
       - "80:80"
+      - "6379:6379"
     volumes:
       - /Users/linzhizhong/vagrant:/vagrant
     networks:
       - webnet
+    entrypoint:
+      - /usr/sbin/httpd
+      - -D
+      - FOREGROUND
 networks:
   webnet:
