@@ -13,6 +13,8 @@ services:
         condition: on-failure
     ports:
       - "80:80"
+    volumes:
+      - /Users/linzhizhong/vagrant:/vagrant
     networks:
       - webnet
 networks:
