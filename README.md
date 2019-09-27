@@ -50,6 +50,7 @@ PS: 清理所有退出的实例 -> docker rm $(docker ps -a -q -f status=exited)
   https://vsupalov.com/difference-docker-compose-and-docker-stack/
 集群管理: Kubernetes, docker-swarm(x)
 远程主机或虚拟机上安装Docker: docker-machine
+Docker Machine 使你能够在各种 Linux 上配置多个远程 Docker 宿主机 此外，Machine 允许你在较早的 Mac 或 Windows 系统上运行 Docker
 
 创建镜像的一种方法
   1.从github中下载某个配置的镜像源文件（包括 Dockerfile 所需的上下文文件，add/copy 需要用到）
