@@ -6,9 +6,21 @@
 ------------
 pull -- Internet --> local-machine: imageA, imageB, ima...
 
-imageX run --> InstanceA [在退出前所做的操作不影响其他实例]
+imageX run --> InstanceA [在退出前所做的操作不影响其他实例][退出后还会停留在本地, 需要时可以docker rm]
        run --> InstanceB
        ru...
+       
+Docker Daemon -> running and distributing Docker containers
+Docker Client -> Docker Client - The command line tool that allows the user to interact with the daemon
+                 GUI: https://kitematic.com/
+Docker Hub -> A registry of Docker images
+
+
+
+PS: 清理所有退出的实例 -> docker rm $(docker ps -a -q -f status=exited)
+    In later versions of Docker -> docker container prune
+    
+    清理镜像 -> docker rmi
 
 ```
 
