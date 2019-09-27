@@ -23,6 +23,7 @@ Docker Hub -> A registry of Docker images
 
 Connection between containers -> docker network ls -> The `bridge` network in which containers are run by default
                               -> docker network inspect bridge -> to see `Containers` sections
+                              -> 自定义 docker network create ...
 
 
 
