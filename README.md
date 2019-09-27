@@ -21,6 +21,8 @@ PS: 清理所有退出的实例 -> docker rm $(docker ps -a -q -f status=exited)
     In later versions of Docker -> docker container prune
     
     清理镜像 -> docker rmi
+    
+    运行完直接清理实例 -> docker run --rm prakhar1989/static-site
 
 ```
 
