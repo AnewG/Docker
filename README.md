@@ -4,14 +4,18 @@
 
 基本概念：
 ------------
-pull -- Internet --> local-machine: imageA, imageB, ima...
+pull -- Internet --> local-machine: imageA, imageB, ima... -> push to hub
 
 parentImage -> childImage -> ...
 
 imageX run --> InstanceA [在退出前所做的操作不影响其他实例][退出后还会停留在本地, 需要时可以docker rm]
        run --> InstanceB
        ru...
-       
+
+Dockerfile -> is a list of commands that the Docker client calls while creating an image
+              put it in source code root directory for create an image
+              docker build ...
+
 Docker Daemon -> running and distributing Docker containers
 Docker Client -> Docker Client - The command line tool that allows the user to interact with the daemon
                  GUI: https://kitematic.com/
