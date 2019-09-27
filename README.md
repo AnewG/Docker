@@ -21,6 +21,9 @@ Docker Client -> Docker Client - The command line tool that allows the user to i
                  GUI: https://kitematic.com/
 Docker Hub -> A registry of Docker images
 
+Connection between containers -> docker network ls -> The `bridge` network in which containers are run by default
+                              -> docker network inspect bridge -> to see `Containers` sections
+
 
 
 PS: 清理所有退出的实例 -> docker rm $(docker ps -a -q -f status=exited)
