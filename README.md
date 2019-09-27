@@ -24,6 +24,14 @@ Docker Hub -> A registry of Docker images
 Connection between containers -> docker network ls -> The `bridge` network in which containers are run by default
                               -> docker network inspect bridge -> to see `Containers` sections
                               -> 自定义 docker network create ...
+-------
+
+Docker Compose -> A tool for defining and running multi-container Docker applications. 编排工具
+Docker Machine -> Create Docker hosts on your computer, on cloud providers, and inside your own data center 
+Docker Swarm   -> A native clustering solution for Docker 集群
+Kubernetes     -> is an open-source system for automating deployment, scaling, and management of containerized applications.
+
+
 
 
 
