@@ -1,6 +1,19 @@
 # Docker
 
 ```
+
+基本概念：
+------------
+pull -- Internet --> local-machine: imageA, imageB, ima...
+
+imageX run --> InstanceA [在退出前所做的操作不影响其他实例]
+       run --> InstanceB
+       ru...
+
+```
+
+
+```
 依赖管理: docker-stack [处理多个服务之间的依赖关系与自动化脚本], docker-compose(x)
   https://vsupalov.com/difference-docker-compose-and-docker-stack/
 集群管理: Kubernetes, docker-swarm(x)
