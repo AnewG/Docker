@@ -24,6 +24,9 @@ Docker Hub -> A registry of Docker images
 Connection between containers -> docker network ls -> The `bridge` network in which containers are run by default
                               -> docker network inspect bridge -> to see `Containers` sections
                               -> 自定义 docker network create ...
+                              
+数据卷用于容器与容器之间[互相隔离],容器与宿主间[互相隔离] 数据共享
+
 -------
 
 Docker Compose -> A tool for defining and running multi-container Docker applications. 编排工具,处理多个容器间的交互（django <-> nginx, ...)
