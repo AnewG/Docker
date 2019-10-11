@@ -8,7 +8,7 @@ pull -- Internet --> local-machine: imageA, imageB, ima... -> push to hub
 
 parentImage -> childImage -> ...
 
-imageX run --> InstanceA [在退出前所做的操作不影响其他实例][退出后还会停留在本地, 需要时可以docker rm]
+imageX run --> InstanceA [在退出前所做的操作不影响其他实例][退出后还会停留在本地, 需要时可以docker rm][未改变的layer将被缓存住用于快速启动]
        run --> InstanceB
        ru...
 
@@ -26,7 +26,7 @@ Connection between containers -> docker network ls -> The `bridge` network in wh
                               -> 自定义 docker network create ...
 -------
 
-Docker Compose -> A tool for defining and running multi-container Docker applications. 编排工具
+Docker Compose -> A tool for defining and running multi-container Docker applications. 编排工具,处理多个容器间的交互（django <-> nginx, ...)
 Docker Machine -> Create Docker hosts on your computer, on cloud providers, and inside your own data center 
 Docker Swarm   -> A native clustering solution for Docker 集群
 Kubernetes     -> is an open-source system for automating deployment, scaling, and management of containerized applications.
