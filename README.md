@@ -85,6 +85,10 @@ Docker Machine 使你能够在各种 Linux 上配置多个远程 Docker 宿主�
   docker service inspect #service_id
   
 查看docker使用容量：docker system df
+清理：
+docker container prune
+docker image prune
+docker image prune --force --all 删除所有不使用的镜像
 
 Docker概念：
   1.swarm里的node: 无伦物理机还是虚拟机都可以加入为节点，节点分为管理节点和工作节点，docker node ls
